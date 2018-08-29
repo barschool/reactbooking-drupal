@@ -1,0 +1,14 @@
+uuid: af014908-3842-416d-9c16-0503ba3c5667
+name: d8-booking
+mail: petertest@live.se
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,32 @@
+#page-wrapper {
+  display: flex;
+  #page {
+    width: 100%;
+  }
+
+  #bookingDrawer {
+    width: 350px;
+    min-width: 350px;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    position: relative;
+    @media screen and (max-width: 590px) {
+      position: absolute;
+      right: 0;
+    }
+
+    .closebtn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 0;
+      padding: 0 5px;
+      line-height: 1;
+      font-size: 25px;
+      &:hover {
+        color: #f1f1f1;
+      }
+    }
+  }
+}

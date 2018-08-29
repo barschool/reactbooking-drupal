@@ -1,0 +1,27 @@
+version: "3"
+services:
+  db:
+    image: mysql:5.7
+    container_name: d8-db
+    ports:
+      - "33061:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: mypassword
+      MYSQL_USER: ebs
+      MYSQL_PASSWORD: mypassword
+      MYSQL_DATABASE: ebs
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db:/docker-entrypoint-initdb.d
+  drupal:
+    container_name: d8-web
+    depends_on:
+      - db
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/app
+    restart: always
+volumes:
+  ? db_data

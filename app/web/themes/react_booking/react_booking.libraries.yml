@@ -1,0 +1,8 @@
+react-app:
+  version: 1.0.0
+  footer: true
+  js:
+    dist/js/index.js: { preprocess: false }
+  css:
+    layout:
+      dist/css/style.css: { preprocess: false }
