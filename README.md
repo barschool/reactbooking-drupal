@@ -50,4 +50,7 @@ npm start
 Make sure port 3000 is free for HMR to work (hot module replacement). Only javascript is working with HMR as of now, the parcel team is working on css. 
 
 
+## Demo
+![alt text](https://www.dropbox.com/s/aaiqnjkjwih02wq/react-booking.gif?raw=1)
+
 
